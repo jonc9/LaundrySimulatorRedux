@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JonC\\Desktop\\CODE_LOUISVILLE\\_2023_SoftwareDevelopment2\\FinalProject\\LaundrySimulator\\LaundrySimulator2.csproj": {}
+    "C:\\Users\\JonC\\Desktop\\CODE_LOUISVILLE\\_2023_SoftwareDevelopment2\\FinalProject\\LaundrySimulatorRedux\\LaundrySimulator2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JonC\\Desktop\\CODE_LOUISVILLE\\_2023_SoftwareDevelopment2\\FinalProject\\LaundrySimulator\\LaundrySimulator2.csproj": {
+    "C:\\Users\\JonC\\Desktop\\CODE_LOUISVILLE\\_2023_SoftwareDevelopment2\\FinalProject\\LaundrySimulatorRedux\\LaundrySimulator2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JonC\\Desktop\\CODE_LOUISVILLE\\_2023_SoftwareDevelopment2\\FinalProject\\LaundrySimulator\\LaundrySimulator2.csproj",
+        "projectUniqueName": "C:\\Users\\JonC\\Desktop\\CODE_LOUISVILLE\\_2023_SoftwareDevelopment2\\FinalProject\\LaundrySimulatorRedux\\LaundrySimulator2.csproj",
         "projectName": "LaundrySimulator2",
-        "projectPath": "C:\\Users\\JonC\\Desktop\\CODE_LOUISVILLE\\_2023_SoftwareDevelopment2\\FinalProject\\LaundrySimulator\\LaundrySimulator2.csproj",
+        "projectPath": "C:\\Users\\JonC\\Desktop\\CODE_LOUISVILLE\\_2023_SoftwareDevelopment2\\FinalProject\\LaundrySimulatorRedux\\LaundrySimulator2.csproj",
         "packagesPath": "C:\\Users\\JonC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JonC\\Desktop\\CODE_LOUISVILLE\\_2023_SoftwareDevelopment2\\FinalProject\\LaundrySimulator\\obj\\",
+        "outputPath": "C:\\Users\\JonC\\Desktop\\CODE_LOUISVILLE\\_2023_SoftwareDevelopment2\\FinalProject\\LaundrySimulatorRedux\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JonC\\AppData\\Roaming\\NuGet\\NuGet.Config",
