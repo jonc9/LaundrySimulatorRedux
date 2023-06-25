@@ -19,7 +19,7 @@ namespace LaundrySimulator2
             after selection, display whatever corresponds with option chosen
             to know what to do have a SWITCH block that will call the requested output  //playing the game, instruction, quitting, etc will be the outputs
             
-            
+            when mainMenu is finished, bring forth appropriate menu such as GamePlayMenu
 
         }
     }
