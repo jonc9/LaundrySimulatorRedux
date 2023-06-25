@@ -1,0 +1,15 @@
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\LaundrySimulator(FinalProject)\LaundrySimulator\bin\Debug\net7.0\LaundrySimulator.exe
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\LaundrySimulator(FinalProject)\LaundrySimulator\bin\Debug\net7.0\LaundrySimulator.deps.json
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\LaundrySimulator(FinalProject)\LaundrySimulator\bin\Debug\net7.0\LaundrySimulator.runtimeconfig.json
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\LaundrySimulator(FinalProject)\LaundrySimulator\bin\Debug\net7.0\LaundrySimulator.dll
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\LaundrySimulator(FinalProject)\LaundrySimulator\bin\Debug\net7.0\LaundrySimulator.pdb
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\LaundrySimulator(FinalProject)\LaundrySimulator\obj\Debug\net7.0\LaundrySimulator.csproj.AssemblyReference.cache
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\LaundrySimulator(FinalProject)\LaundrySimulator\obj\Debug\net7.0\LaundrySimulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\LaundrySimulator(FinalProject)\LaundrySimulator\obj\Debug\net7.0\LaundrySimulator.AssemblyInfoInputs.cache
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\LaundrySimulator(FinalProject)\LaundrySimulator\obj\Debug\net7.0\LaundrySimulator.AssemblyInfo.cs
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\LaundrySimulator(FinalProject)\LaundrySimulator\obj\Debug\net7.0\LaundrySimulator.csproj.CoreCompileInputs.cache
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\LaundrySimulator(FinalProject)\LaundrySimulator\obj\Debug\net7.0\LaundrySimulator.dll
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\LaundrySimulator(FinalProject)\LaundrySimulator\obj\Debug\net7.0\refint\LaundrySimulator.dll
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\LaundrySimulator(FinalProject)\LaundrySimulator\obj\Debug\net7.0\LaundrySimulator.pdb
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\LaundrySimulator(FinalProject)\LaundrySimulator\obj\Debug\net7.0\LaundrySimulator.genruntimeconfig.cache
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\LaundrySimulator(FinalProject)\LaundrySimulator\obj\Debug\net7.0\ref\LaundrySimulator.dll
