@@ -1,0 +1,5 @@
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\_2023_SoftwareDevelopment2\FinalProject\LaundrySimulatorRedux\obj\Debug\net7.0\LaundrySimulator2.csproj.AssemblyReference.cache
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\_2023_SoftwareDevelopment2\FinalProject\LaundrySimulatorRedux\obj\Debug\net7.0\LaundrySimulator2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\_2023_SoftwareDevelopment2\FinalProject\LaundrySimulatorRedux\obj\Debug\net7.0\LaundrySimulator2.AssemblyInfoInputs.cache
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\_2023_SoftwareDevelopment2\FinalProject\LaundrySimulatorRedux\obj\Debug\net7.0\LaundrySimulator2.AssemblyInfo.cs
+C:\Users\JonC\Desktop\CODE_LOUISVILLE\_2023_SoftwareDevelopment2\FinalProject\LaundrySimulatorRedux\obj\Debug\net7.0\LaundrySimulator2.csproj.CoreCompileInputs.cache

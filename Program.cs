@@ -17,6 +17,9 @@ namespace LaundrySimulator2
 
             // might need this -> ? Console.ReadKey();
             
+            
+            
+            
             Console.WriteLine("Welcome! We all know doing laundry is most peoples favorite pasttime. Even yours. Unfortunately," +
                "you just had a long day and you realize you don't have any clothes for tomorrow. Begrudgedly you dig deep and decide " +
                "to do some laundry." + "\n" + "Or do you?"); // I may put this text before the menu selection to give the user an intro.
