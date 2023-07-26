@@ -12,11 +12,13 @@ namespace LaundrySimulator2
         {
             Console.Title = "Laundry Simulator Redux";
 
-            bool showMenu = true;
-            while (showMenu)
-            {
-                showMenu = Menu2();
-            }
+            MainMenu MainMenu = new MainMenu();
+
+            //bool showMenu = true;
+            //while (true)
+            //{
+            //    showMenu = Menu2();
+            //}
         }
         //    //pseudo code onward
         //    show title
