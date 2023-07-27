@@ -14,7 +14,7 @@ namespace LaundrySimulator2
 
     public class PlayerName // will probably have to put this into its own file at some point
     {
-        public int NameId { get; set; }
+        public int NameId { get; set; } // 7-26-2023: NEED TO HAVE THIS BE USED TO ACCEPT USER INPUT FOR THE NAME.
         public string Name { get; set; }
     }
 }
