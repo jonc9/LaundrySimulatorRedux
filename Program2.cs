@@ -12,7 +12,7 @@
 
             GetPlayerName();
 
-            void GetPlayerName()
+            void GetPlayerName() // 7-26-2023: LEFT OFF HERE TRYING TO GET THE PLAYER NAME INPUT TO BE TAKEN AND A KEY TO GENERATE//
             {
                 using var context = new NameContext();
                 var PlayerName = context.PlayerName.ToList();
