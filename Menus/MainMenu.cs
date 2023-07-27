@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LaundrySimulator2 //more pseudocode
+﻿namespace LaundrySimulator2 //more pseudocode
 {
     public class MainMenu //will there be a 'default menu' to be inherited
     {
@@ -22,18 +16,18 @@ namespace LaundrySimulator2 //more pseudocode
 
             Console.WriteLine("3.) Exit aka Give up on wearing clean clothes tomorrow.");
             Console.WriteLine("\n");
-            var userInput = int.Parse(Console.ReadLine());
+            var MainMenuInput = Console.ReadLine();
 
-            switch (userInput)
+            switch(MainMenuInput)
             {
-                case 1: //update for redux
+                case "1": //update for redux
                     Console.WriteLine("Okay. It is laundry time!");
                     Console.WriteLine("\n");
                     Console.WriteLine("Here are the clothes you find in your laundry basket:" + "\n");
                     Thread.Sleep(1000);
                     break;
 
-                case 2: //don't forget to update
+                case "2": //don't forget to update
                     Console.WriteLine("This is a version of a silly idea I had I wanted to do for my final project. However, what I wanted to do " +
                 "was going to take longer than ancitipated... This version you have limited options as to what you can do. The README will " +
                 "have more information." + "\n");
@@ -41,7 +35,7 @@ namespace LaundrySimulator2 //more pseudocode
                     break;                                     //Console.ReadKey(); -- this may be used to have the program wait until a key is pressed to go back?
 
 
-                case 3:
+                case "3":
                     Console.WriteLine("\n" + "I guess this is goodbye. Have fun being smelly!");
                     Thread.Sleep(3000);
                     Environment.Exit(0);
@@ -49,6 +43,7 @@ namespace LaundrySimulator2 //more pseudocode
 
                 default:
                     Console.WriteLine("Try again, please.");
+                    Console.Clear();
                     break;
             }
         }
