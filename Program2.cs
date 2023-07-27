@@ -10,6 +10,16 @@
 
             using var db = new NameContext(); //look into this to see  if i need to change this 
 
+            GetPlayerName();
+
+            void GetPlayerName()
+            {
+                using var context = new NameContext();
+                var PlayerName = context.PlayerName.ToList();
+                Console.WriteLine(PlayerName);
+                
+            }
+
             //this is where the player name will be asked and put in a table
             Console.WriteLine("What is your name?");
             db.Add(new PlayerName { });
