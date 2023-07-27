@@ -15,6 +15,7 @@ namespace LaundrySimulator2
     public class PlayerName // will probably have to put this into its own file at some point
     {
         public int NameId { get; set; }
+        public string Name { get; set; }
     }
 }
 
