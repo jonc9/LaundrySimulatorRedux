@@ -1,6 +1,6 @@
 ﻿namespace LaundrySimulator2 //more pseudocode
 {
-    public class MainMenu //will there be a 'default menu' to be inherited
+    public class MainMenu //will there be a 'default menu' to be inherited?
     {
         public MainMenu()
         {
