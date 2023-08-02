@@ -7,44 +7,33 @@
         {
             Console.Title = "Laundry Simulator Redux";
 
-            MainMenu MainMenu = new MainMenu();
+            MainMenu MainMenu = new MainMenu(); //calls MainMenu.cs
 
-            using var db = new NameContext(); //look into this to see  if i need to change this 
+            using var db = new LaundrySimulatorReduxContext(); //look into this to see  if i need to change this 
             
-            //using (NameContext context = new NameContext())
+            //using (NameContext context = new NameContext()) **may keep this since its just a console application***
             //{
             //    context.Database.EnsureCreated();
             //}
 
             GetPlayerName();
 
-            void GetPlayerName() // 7-26-2023: LEFT OFF HERE TRYING TO GET THE PLAYER NAME INPUT TO BE TAKEN AND A KEY TO GENERATE//
+            void GetPlayerName() // this will eventually be moved into its own class or file
             {
                 Console.WriteLine("What is your name?");
-                var player = new PlayerName { Name = Console.ReadLine()};
-                using var context = new NameContext();
+                var player = new PlayerName { Name = Console.ReadLine()}; //add a if block in case someone doesn't enter anything!
+                using var context = new LaundrySimulatorReduxContext();
                 context.PlayerNames.Add(player);                
-                Console.WriteLine("Thank you, " + player.Name); // need to figure out how to get the name entered to call here. ***
-                context.SaveChanges();
-                // var PlayerName = new Console.ReadLine();
-                //using var context = new NameContext();
-                // PlayerName = context.PlayerNames.ToList().ToString(); // add a ToString()?
-                //Console.WriteLine();
-                
+                Console.WriteLine("Thank you, " + player.Name); //eventually update with more of tone i am wanting
+                context.SaveChanges();             
             }
 
+            //***GAME LOOP WILL PROCEED HERE***
+
             //this is where the player name will be asked and put in a table
-            //Console.WriteLine("What is your name?");
-            //db.Add(new PlayerName { });
-            //db.SaveChanges();
-
             //figure out how to pick up what was chosen in mainmenu and go from there if ()
-            //{
-
-            //}
-
-
-
+            
+            //-------------------------------BELOW IS PSEUDO CODE------------------------------------
 
             //bool showMenu = true;
             //while (true)
