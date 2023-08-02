@@ -1,5 +1,4 @@
-﻿using System.ComponentModel;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace LaundrySimulator2
 {
