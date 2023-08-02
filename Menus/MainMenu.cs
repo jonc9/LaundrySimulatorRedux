@@ -1,6 +1,6 @@
 ﻿namespace LaundrySimulator2 //more pseudocode
 {
-    public class MainMenu //will there be a 'default menu' to be inherited?
+    public class MainMenu //will there be a 'default menu' to be inherited? OR change this name to Menus and have methods for each type of menu below
     {
         public MainMenu()
         {
@@ -23,8 +23,7 @@
                 case "1": //update for redux
                     Console.WriteLine("Okay. It is laundry time!");
                     Console.WriteLine("\n");
-                    Console.WriteLine("Here are the clothes you find in your laundry basket:" + "\n");
-                    Thread.Sleep(1000);
+                    Thread.Sleep(500);
                     break;
 
                 case "2": //don't forget to update
@@ -49,16 +48,3 @@
         }
     }
 }
-    //public static bool Menu2()
-    //{
-    //    Console.Clear();
-    //    Console.WriteLine("choose 1");
-    //    Console.ReadLine();
-
-//    switch (Console.ReadLine())
-//    {
-//        case "1":
-//            // Console.WriteLine("hi there");
-//            return true;
-//    }
-//}
