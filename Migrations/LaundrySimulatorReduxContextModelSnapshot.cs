@@ -3,19 +3,16 @@ using LaundrySimulator2;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
 namespace LaundrySimulator2.Migrations
 {
-    [DbContext(typeof(NameContext))]
-    [Migration("20230801232351_InitialCreate")]
-    partial class InitialCreate
+    [DbContext(typeof(LaundrySimulatorReduxContext))]
+    partial class LaundrySimulatorReduxContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
