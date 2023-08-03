@@ -2,9 +2,9 @@
 
 namespace LaundrySimulator2
 {
-    public class PlayerName
+    public class PlayerName //this is what gets the player name and stores it
     {
-        public int Id { get; set; } // 7-26-2023: NEED TO HAVE THIS BE USED TO ACCEPT USER INPUT FOR THE NAME.
+        public int Id { get; set; }
         public required string Name { get; set; }
     }
 }
