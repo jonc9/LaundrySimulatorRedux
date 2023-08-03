@@ -19,6 +19,10 @@ namespace LaundrySimulator2
             //}
 
             GetPlayerName();
+            Thread.Sleep(100);
+            Console.Clear();
+
+            DefaultInvTest();
 
             void GetPlayerName() // this will eventually be moved into its own class or file
             {
@@ -28,6 +32,16 @@ namespace LaundrySimulator2
                 context.PlayerNames.Add(player);                
                 Console.WriteLine("Thank you, " + player.Name); //eventually update with more of tone i am wanting
                 context.SaveChanges();             
+            }
+            
+            void DefaultInvTest() //***FIGURE OUT HOW TO GET THE SEEDED TABLE TO DISPLAY ON COMMAND***
+            {
+                Console.WriteLine("This is a test to see if the Default Inventory table appears");
+
+                using (var context = new LaundrySimulatorReduxContext()) ;
+                {
+                    var DefaultInventory = context.DefaultInventories.ToList();
+                }
             }
 
             //***GAME LOOP WILL PROCEED HERE***
