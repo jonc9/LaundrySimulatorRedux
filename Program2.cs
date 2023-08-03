@@ -1,4 +1,6 @@
-﻿namespace LaundrySimulator2
+﻿using LaundrySimulator2.Classes;
+
+namespace LaundrySimulator2
 {
 
     public class Program2
