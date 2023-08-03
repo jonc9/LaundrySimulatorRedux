@@ -24,6 +24,9 @@ namespace LaundrySimulator2
             modelBuilder.Entity<DefaultInventory>()
                 .ToTable("DefaultInventory");
             modelBuilder.Entity<DefaultInventory>()
+                .HasKey(i => i.InvId)
+                .HasName("PrimaryKey_InvId");
+            modelBuilder.Entity<DefaultInventory>()
                 .Property(i => i.ItemName)
                 .IsRequired(true);
             
