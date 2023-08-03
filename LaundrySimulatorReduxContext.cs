@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using LaundrySimulator2.Classes;
+using Microsoft.EntityFrameworkCore;
 
 namespace LaundrySimulator2
 {
@@ -13,7 +14,7 @@ namespace LaundrySimulator2
 
         public DbSet<DefaultInventory> DefaultInventories { get; set; }
 
-        public class DefaultInventory // This is the class to set what the default (aka all possible items) has. *** may eventually convert to Interface***
+        public class DefaultInventory // This is the class to set what the default (aka all possible items) has. *** may eventually convert to Interface*** ALSO REFACTOR INTO OWN CLASS FILE
         {
             public int InvId { get; set; }
             public required string ItemName { get; set; }
