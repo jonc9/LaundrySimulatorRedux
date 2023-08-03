@@ -3,6 +3,7 @@ using LaundrySimulator2;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LaundrySimulator2.Migrations
 {
     [DbContext(typeof(LaundrySimulatorReduxContext))]
-    partial class LaundrySimulatorReduxContextModelSnapshot : ModelSnapshot
+    [Migration("20230802223956_ChangingNameIdToId")]
+    partial class ChangingNameIdToId
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -20,36 +23,6 @@ namespace LaundrySimulator2.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("LaundrySimulator2.LaundrySimulatorReduxContext+DefaultInventory", b =>
-                {
-                    b.Property<int>("InvId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("InvId"));
-
-                    b.Property<string>("ItemDescription")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ItemName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("InvId")
-                        .HasName("PrimaryKey_InvId");
-
-                    b.ToTable("DefaultInventory", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            InvId = 1,
-                            ItemDescription = "Test description",
-                            ItemName = "Mallet"
-                        });
-                });
 
             modelBuilder.Entity("LaundrySimulator2.PlayerName", b =>
                 {
