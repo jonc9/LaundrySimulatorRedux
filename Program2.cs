@@ -44,7 +44,7 @@ namespace LaundrySimulator2
 
             void TitleScreen()
             {
-                Console.WriteLine("LAUNDRY SIMULATOR V2 (new and improved forumla!\n\n\n");
+                Console.WriteLine("LAUNDRY SIMULATOR V2 (new and improved forumla!\n");
             }
 
             void GameLogic()
