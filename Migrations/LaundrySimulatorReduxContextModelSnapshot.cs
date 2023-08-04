@@ -21,6 +21,23 @@ namespace LaundrySimulator2.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("LaundrySimulator2.Classes.PlayerName", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PlayerNames", (string)null);
+                });
+
             modelBuilder.Entity("LaundrySimulator2.LaundrySimulatorReduxContext+DefaultInventory", b =>
                 {
                     b.Property<int>("InvId")
@@ -40,7 +57,7 @@ namespace LaundrySimulator2.Migrations
                     b.HasKey("InvId")
                         .HasName("PrimaryKey_InvId");
 
-                    b.ToTable("DefaultInventory", (string)null);
+                    b.ToTable("DefaultInventories", (string)null);
 
                     b.HasData(
                         new
@@ -49,23 +66,6 @@ namespace LaundrySimulator2.Migrations
                             ItemDescription = "Test description",
                             ItemName = "Mallet"
                         });
-                });
-
-            modelBuilder.Entity("LaundrySimulator2.PlayerName", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("PlayerNames");
                 });
 #pragma warning restore 612, 618
         }
