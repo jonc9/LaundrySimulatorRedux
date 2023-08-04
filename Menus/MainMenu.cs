@@ -31,6 +31,7 @@
                     Console.WriteLine("An updated version of my silly final project from my software development 1 course for Code Louisville. Just follow the on-screen prompts and you should be fine!");
                     Console.WriteLine("\nPress any key to go back to main menu.");
                     Console.ReadKey();
+                    Console.Clear();
                     goto topOfMenu;
 
                 case "3":
