@@ -3,6 +3,7 @@ using LaundrySimulator2;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LaundrySimulator2.Migrations
 {
     [DbContext(typeof(LaundrySimulatorReduxContext))]
-    partial class LaundrySimulatorReduxContextModelSnapshot : ModelSnapshot
+    [Migration("20230804140907_ChangeDescriptionPolo")]
+    partial class ChangeDescriptionPolo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,32 +49,32 @@ namespace LaundrySimulator2.Migrations
                         new
                         {
                             InvId = 1,
-                            ItemDescription = "Run of the mill variety detergent;",
-                            ItemName = " - Laundry Detergent"
+                            ItemDescription = "Run of the mill variety detergent.",
+                            ItemName = "Laundry Detergent"
                         },
                         new
                         {
                             InvId = 2,
-                            ItemDescription = "Your wallet. Tearing at the seams. Only a couple quarters;",
-                            ItemName = " - Wallet"
+                            ItemDescription = "Your wallet. Tearing at the seams. Only a couple quarters.",
+                            ItemName = "Wallet"
                         },
                         new
                         {
                             InvId = 3,
-                            ItemDescription = "Something from your youth. How did they get here?;",
-                            ItemName = " - JNCO Jeans"
+                            ItemDescription = "Something from your youth. How did they get here?",
+                            ItemName = "JNCO Jeans"
                         },
                         new
                         {
                             InvId = 4,
-                            ItemDescription = "Black t-shirt with Sailor Saturn on it since she's your favorite;",
-                            ItemName = " - Sailor Moon T-shirt"
+                            ItemDescription = "Black t-shirt with Sailor Saturn on it since she's your favorite.",
+                            ItemName = "Sailor Moon T-shirt"
                         },
                         new
                         {
                             InvId = 5,
-                            ItemDescription = "Basic purple polo shirt you got as a gift;",
-                            ItemName = " - Polo shirt with your name on it."
+                            ItemDescription = "Basic purple polo shirt you got as a gift.",
+                            ItemName = "Polo shirt with your name on it."
                         });
                 });
 

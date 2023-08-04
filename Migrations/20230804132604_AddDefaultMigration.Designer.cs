@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LaundrySimulator2.Migrations
 {
     [DbContext(typeof(LaundrySimulatorReduxContext))]
-    [Migration("20230803012918_AddedDefaultInventoryDbContextAndMethodForSeeding")]
-    partial class AddedDefaultInventoryDbContextAndMethodForSeeding
+    [Migration("20230804132604_AddDefaultMigration")]
+    partial class AddDefaultMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,7 +24,7 @@ namespace LaundrySimulator2.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("LaundrySimulator2.LaundrySimulatorReduxContext+DefaultInventory", b =>
+            modelBuilder.Entity("LaundrySimulator2.Classes.DefaultInventory", b =>
                 {
                     b.Property<int>("InvId")
                         .ValueGeneratedOnAdd()
@@ -49,12 +49,36 @@ namespace LaundrySimulator2.Migrations
                         new
                         {
                             InvId = 1,
-                            ItemDescription = "Test description",
-                            ItemName = "Mallet"
+                            ItemDescription = "Run of the mill variety detergent.",
+                            ItemName = "Laundry Detergent"
+                        },
+                        new
+                        {
+                            InvId = 2,
+                            ItemDescription = "Your wallet. Tearing at the seams. Only a couple quarters.",
+                            ItemName = "Wallet"
+                        },
+                        new
+                        {
+                            InvId = 3,
+                            ItemDescription = "Something from your youth. How did they get here?",
+                            ItemName = "JNCO Jeans"
+                        },
+                        new
+                        {
+                            InvId = 4,
+                            ItemDescription = "Black t-shirt with Sailor Saturn on it since she's your favorite.",
+                            ItemName = "Sailor Moon T-shirt"
+                        },
+                        new
+                        {
+                            InvId = 5,
+                            ItemDescription = "Run of the mill variety detergent.",
+                            ItemName = "Polo shirt with your name on it."
                         });
                 });
 
-            modelBuilder.Entity("LaundrySimulator2.PlayerName", b =>
+            modelBuilder.Entity("LaundrySimulator2.Classes.PlayerName", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
