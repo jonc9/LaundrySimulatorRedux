@@ -14,12 +14,6 @@ namespace LaundrySimulator2
 
         public DbSet<DefaultInventory> DefaultInventories { get; set; }
 
-        public class DefaultInventory // This is the class to set what the default (aka all possible items) has. *** may eventually convert to Interface*** ALSO REFACTOR INTO OWN CLASS FILE
-        {
-            public int InvId { get; set; }
-            public required string ItemName { get; set; }
-            public string ItemDescription { get; set; }
-        }
         protected override void OnModelCreating(ModelBuilder modelBuilder) //this is for seeding
         {
             modelBuilder.Entity<DefaultInventory>()
@@ -30,11 +24,22 @@ namespace LaundrySimulator2
             modelBuilder.Entity<DefaultInventory>()
                 .Property(i => i.ItemName)
                 .IsRequired(true);
-            
-            
+
+
             modelBuilder.Entity<DefaultInventory>().HasData(
                 new DefaultInventory { InvId = 1, ItemName = "Mallet", ItemDescription = "Test description" }//update descriptions later
         );
+        }        
+    }
+    public class DefaultInventory // This is the class to set what the default (aka all possible items) has. *** may eventually convert to Interface*** ALSO REFACTOR INTO OWN CLASS FILE
+    {
+        public int InvId { get; set; }
+        public required string ItemName { get; set; }
+        public string ItemDescription { get; set; }
+
+        public override string ToString()
+        {
+            return $"Name: {ItemName}, Description: {ItemDescription}";
         }
     }
 }
