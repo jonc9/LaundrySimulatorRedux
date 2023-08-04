@@ -4,44 +4,44 @@
     {
         public MainMenu()
         {
+            topOfMenu:
             Console.WriteLine("\n");
-            Console.WriteLine("Make your choice by entering a numerical digit. Nothing more.");
+            Console.WriteLine("Make your choice by entering a numerical digit.");
             Console.WriteLine("\n");
 
-            Console.WriteLine("1.) Do Your Laundry"); // will link to the main gameplay loop
+            Console.WriteLine("1.) Play!"); // will link to the main gameplay loop
             Console.WriteLine("\n");
 
             Console.WriteLine("2.) About/How to play");
             Console.WriteLine("\n");
 
-            Console.WriteLine("3.) Exit aka Give up on wearing clean clothes tomorrow.");
+            Console.WriteLine("3.) Exit");
             Console.WriteLine("\n");
             var MainMenuInput = Console.ReadLine();
 
             switch(MainMenuInput)
             {
-                case "1": //update for redux
-                    Console.WriteLine("Okay. It is laundry time!");
-                    Console.WriteLine("\n");
+                case "1": //
+                    Console.WriteLine("Let's do this!");
                     Thread.Sleep(500);
+                    Console.Clear();
                     break;
 
                 case "2": //don't forget to update
-                    Console.WriteLine("This is a version of a silly idea I had I wanted to do for my final project. However, what I wanted to do " +
-                "was going to take longer than ancitipated... This version you have limited options as to what you can do. The README will " +
-                "have more information." + "\n");
-                    Thread.Sleep(2000); //implement a 'wait' and a "goback selection" use ClearConsole as well?
-                    break;                                     //Console.ReadKey(); -- this may be used to have the program wait until a key is pressed to go back?
-
+                    Console.WriteLine("An updated version of my silly final project from my software development 1 course for Code Louisville. Just follow the on-screen prompts and you should be fine!");
+                    Console.WriteLine("\nPress any key to go back to main menu.");
+                    Console.ReadKey();
+                    goto topOfMenu;
 
                 case "3":
-                    Console.WriteLine("\n" + "I guess this is goodbye. Have fun being smelly!");
-                    Thread.Sleep(3000);
+                    Console.WriteLine("\nOkay bye.");
                     Environment.Exit(0);
                     break;
 
                 default:
                     Console.WriteLine("Try again, please.");
+                    Console.WriteLine("\nPress any key to go back to main menu.");
+                    Console.ReadKey();
                     Console.Clear();
                     break;
             }
