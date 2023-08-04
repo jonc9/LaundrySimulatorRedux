@@ -1,4 +1,5 @@
 ﻿using LaundrySimulator2.Classes;
+using Microsoft.EntityFrameworkCore;
 
 namespace LaundrySimulator2
 {
@@ -21,7 +22,7 @@ namespace LaundrySimulator2
             GetPlayerName();
             Thread.Sleep(100);
             Console.Clear();
-
+            
             DefaultInvTest();
 
             void GetPlayerName() // this will eventually be moved into its own class or file
@@ -33,14 +34,16 @@ namespace LaundrySimulator2
                 Console.WriteLine("Thank you, " + player.Name); //eventually update with more of tone i am wanting
                 context.SaveChanges();             
             }
-            
+
             void DefaultInvTest() //***FIGURE OUT HOW TO GET THE SEEDED TABLE TO DISPLAY ON COMMAND***
             {
                 Console.WriteLine("This is a test to see if the Default Inventory table appears");
-
-                using (var context = new LaundrySimulatorReduxContext()) ;
+                //LaundrySimulatorReduxContext laundrySimulatorReduxContext = new LaundrySimulatorReduxContext();
+                using var context = new LaundrySimulatorReduxContext();
+                var defaultinv = context.DefaultInventories;
+                foreach (var defaultInventories in defaultinv)
                 {
-                    var DefaultInventory = context.DefaultInventories.ToList();
+                    Console.WriteLine(defaultInventories);
                 }
             }
 
@@ -48,7 +51,7 @@ namespace LaundrySimulator2
 
             //this is where the player name will be asked and put in a table
             //figure out how to pick up what was chosen in mainmenu and go from there if ()
-            
+
             //-------------------------------BELOW IS PSEUDO CODE------------------------------------
 
             //bool showMenu = true;
