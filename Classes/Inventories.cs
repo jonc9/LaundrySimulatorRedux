@@ -8,8 +8,14 @@
 
         public override string ToString()
         {
-            return $"Name: {ItemName}, Description: {ItemDescription}";
+            return $"{ItemName}, {ItemDescription}";
         }
+    }
+    public class PlayerInventory
+    {
+        public int PInvId { get; set; }
+
+        public required string ItemName { get; set; }
     }
 }
 
