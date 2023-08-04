@@ -96,8 +96,8 @@ namespace LaundrySimulator2
             void NpcQuestion()
             {
                 Console.WriteLine("\n\nWhat is the color of the polo you have in your laundry basket? No peeking! Choose between red, blue, purple, orange, black:");
-                Console.ReadLine().ToLower();
-                if (Console.ReadLine() == "purple")
+                string userinput = Console.ReadLine().ToLower();
+                if (userinput == "purple")
                 {
                     Console.WriteLine("You got it right! You may proceed!");
                 }
